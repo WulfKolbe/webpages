@@ -1,25 +1,87 @@
 <!DOCTYPE html>
 <html>
+<style type="text/css" media="screen">
+$l: 1em;
+$t: 4.5s;
+body {
+	box-sizing: border-box;
+	display: flex;
+	justify-content: center;
+	margin: 0;
+	padding-top: .5em;
+	min-height: 100vh;
+	perspective: 20em;
+	background: #000;
+	color: #fff;
+	font: 1em trebuchet ms, sans-serif;
+}
+
+label {
+	color: mix(#fff, #ee786e);
+	cursor: pointer;
+	
+	:checked + & { color: #a2ccb6; }
+}
+
+div { transform-style: preserve-3d }
+
+.a3d {
+	display: grid;
+	grid-template: repeat(var(--n), $l)/ repeat(var(--n), $l);
+	grid-gap: .25em;
+	position: absolute;
+	top: 50%; left: 50%;
+	transform: translate(-50%, -50%);
+}
+
+.s3d {
+	--m: var(--f0);
+	animation: r $t infinite linear calc((var(--m) - 1)*#{$t});
+	
+	#o2:checked ~ * & { --m: var(--f1) }
+}
+
+.s2d {
+	position: absolute;
+	width: $l; height: $l;
+	transform: 
+		rotatey(calc(var(--idx)*1turn/var(--p)))
+		translatez(calc(var(--rf)*#{$l}));
+	background: Linear-gradient(90deg, var(--sl));
+}
+@keyframes r { to { transform: rotatey(1turn) } }
+  </style>
+  </HEAD>
+
+- var n = 18;
+- var a = -.25, b = .5, c = 1;
+- var m = ['#A2CCB6', '#FCEEB5', '#EE786E'], p = m.length;
+
+style
+	| :root { --n: #{n}; --p: #{p}; --rf: #{.5/Math.tan(Math.PI/p)} }
+	- for(var i = 0; i < n; i++)
+		| .s3d:nth-child(n + #{i*n + 1}) { --i: #{i} }
+	- for(var j = 0; j < n; j++)
+		| .s3d:nth-child(#{n}n + #{j + 1}) { --j: #{j} }
+	- for(var k = 0; k < p; k++)
+		| .s2d:nth-child(#{p}n + #{k + 1}) { --idx: #{k}; --sl: #{m[k]}, #{m[(k)%p]} }
+input(type='radio' name='o' id='o1' checked)
+label(for='o1') option 1
+input(type='radio' name='o' id='o2')
+label(for='o2') option 2
+.a3d
+	- for(var i = 0; i < n; i++)
+		- for(var j = 0; j < n; j++)
+			- var xr = i - .5*(n - 1);
+			- var yr = j - .5*(n - 1);
+			- var rr = Math.hypot(xr, yr);
+			- var ang = Math.atan2(yr, xr);
+			.s3d(style=`--f0: ${+(2*rr/(n - 1)/Math.SQRT2).toFixed(2)}; --f1: ${+(.5*ang/Math.PI).toFixed(2)};`)
+				- for(var k = 0; k < p; k++)
+					.s2d
+
  <HEAD>
     <TITLE>
       Home Page von Wulf Kolbe Hi folks!
     </TITLE>
-  <style type="text/css" media="screen">
-  BODY { 
-    margin-left: 75px;
-    margin-right: 25px;
-    margin-top: 25px;
-    margin-bottom: 25px;
-    background: url(whitenote.jpg) white;
-  }
-  </style>
-  </HEAD>
-
-    <body>
-    <h1>Hello, what's up?</h1>
-
-    <button onclick="fetchMessage()">Fetch Message</button>
-    <p id="message">Click on the button to fetch the message.</p>
-</body>
-
 </html>

@@ -1,86 +1,114 @@
 <!DOCTYPE html>
 <html>
 <style type="text/css" media="screen">
-$l: 1em;
-$t: 4.5s;
-body {
-	box-sizing: border-box;
-	display: flex;
-	justify-content: center;
-	margin: 0;
-	padding-top: .5em;
-	min-height: 100vh;
-	perspective: 20em;
-	background: #000;
-	color: #fff;
-	font: 1em trebuchet ms, sans-serif;
-}
+<style>
+    :root {
+        --n: 18;
+        --p: 3;
+        --rf: 0.288675134594813
+    }
 
-label {
-	color: mix(#fff, #ee786e);
-	cursor: pointer;
+    .s3d:nth-child(n + 325) {
+        --i: 18
+    }
+</style>.s3d:nth-child(18n + 1) { --j: 0 }.s3d:nth-child(18n + 2) { --j: 1 }.s3d:nth-child(18n + 3) { --j: 2 }.s3d:nth-child(18n + 4) { --j: 3 }.s3d:nth-child(18n + 5) { --j: 4 }.s3d:nth-child(18n + 6) { --j: 5 }.s3d:nth-child(18n + 7) { --j: 6 }.s3d:nth-child(18n
++ 8) { --j: 7 }.s3d:nth-child(18n + 9) { --j: 8 }.s3d:nth-child(18n + 10) { --j: 9 }.s3d:nth-child(18n + 11) { --j: 10 }.s3d:nth-child(18n + 12) { --j: 11 }.s3d:nth-child(18n + 13) { --j: 12 }.s3d:nth-child(18n + 14) { --j: 13 }.s3d:nth-child(18n + 15)
+{ --j: 14 }.s3d:nth-child(18n + 16) { --j: 15 }.s3d:nth-child(18n + 17) { --j: 16 }.s3d:nth-child(18n + 18) { --j: 17 }.s2d:nth-child(3n + 1) { --idx: 0; --sl: #A2CCB6, #A2CCB6 }.s2d:nth-child(3n + 2) { --idx: 1; --sl: #FCEEB5, #FCEEB5 }.s2d:nth-child(3n
++ 3) { --idx: 2; --sl: #EE786E, #EE786E }<input type="radio" name="o" id="o1" checked="checked" /><label for="o1">option 1</label><input type="radio" name="o" id="o2" /><label for="o2">option 2</label>
+<div class="a3d">
+    <div class="s3d" style="--f0: 1.06; --f1: 0.37;">
+        <div class="s2d"></div>
+        <div class="s2d"></div>
+        <div class="s2d"></div>
+    </div>
+    <div class="s3d" style="--f0: 1.01; --f1: 0.36;">
+        <div class="s2d"></div>
+        <div class="s2d"></div>
+        <div class="s2d"></div>
+    </div>
+    <div class="s3d" style="--f0: 0.96; --f1: 0.35;">
+        <div class="s2d"></div>
+        <div class="s2d"></div>
+        <div class="s2d"></div>
+    </div>
+    <div class="s3d" style="--f0: 0.91; --f1: 0.33;">
+        <div class="s2d"></div>
+        <div class="s2d"></div>
+        <div class="s2d"></div>
+    </div>
+    <div class="s3d" style="--f0: 0.87; --f1: 0.32;">
+        <div class="s2d"></div>
+        <div class="s2d"></div>
+        <div class="s2d"></div>
+    </div>
+    <div class="s3d" style="--f0: 0.84; --f1: 0.31;">
+        <div class="s2d"></div>
+        <div class="s2d"></div>
+        <div class="s2d"></div>
+    </div>
+    <div class="s3d" style="--f0: 0.82; --f1: 0.29;">
+        <div class="s2d"></div>
+        <div class="s2d"></div>
+        <div class="s2d"></div>
+    </div>
+    <div class="s3d" style="--f0: 0.8; --f1: 0.27;">
+        <div class="s2d"></div>
+        <div class="s2d"></div>
+        <div class="s2d"></div>
+    </div>
+    <div class="s3d" style="--f0: 0.79; --f1: 0.26;">
+        <div class="s2d"></div>
+        <div class="s2d"></div>
+        <div class="s2d"></div>
+    </div>
+    <div class="s3d" style="--f0: 0.79; --f1: 0.24;">
+        <div class="s2d"></div>
+        <div class="s2d"></div>
+        <div class="s2d"></div>
+    </div>
+    <div class="s3d" style="--f0: 0.8; --f1: 0.23;">
+        <div class="s2d"></div>
+        <div class="s2d"></div>
+        <div class="s2d"></div>
+    </div>
+    <div class="s3d" style="--f0: 0.82; --f1: 0.21;">
+        <div class="s2d"></div>
+        <div class="s2d"></div>
+        <div class="s2d"></div>
+    </div>
+    <div class="s3d" style="--f0: 0.84; --f1: 0.19;">
+        <div class="s2d"></div>
+        <div class="s2d"></div>
+        <div class="s2d"></div>
+    </div>
+    <div class="s3d" style="--f0: 0.87; --f1: 0.18;">
+        <div class="s2d"></div>
+        <div class="s2d"></div>
+        <div class="s2d"></div>
+    </div>
+    <div class="s3d" style="--f0: 0.91; --f1: 0.17;">
+        <div class="s2d"></div>
+        <div class="s2d"></div>
+        <div class="s2d"></div>
+    </div>
+    <div class="s3d" style="--f0: 0.96; --f1: 0.15;">
+        <div class="s2d"></div>
+        <div class="s2d"></div>
+        <div class="s2d"></div>
+    </div>
+    <div class="s3d" style="--f0: 1.01; --f1: 0.14;">
+        <div class="s2d"></div>
+        <div class="s2d"></div>
+        <div class="s2d"></div>
+    </div>
+    <div class="s3d" style="--f0: 1.06; --f1: 0.13;">
+        <div class="s2d"></div>
+        <div class="s2d"></div>
+        <div class="s2d"></div>
+    </div>
+</div>
 	
-	:checked + & { color: #a2ccb6; }
-}
-
-div { transform-style: preserve-3d }
-
-.a3d {
-	display: grid;
-	grid-template: repeat(var(--n), $l)/ repeat(var(--n), $l);
-	grid-gap: .25em;
-	position: absolute;
-	top: 50%; left: 50%;
-	transform: translate(-50%, -50%);
-}
-
-.s3d {
-	--m: var(--f0);
-	animation: r $t infinite linear calc((var(--m) - 1)*#{$t});
-	
-	#o2:checked ~ * & { --m: var(--f1) }
-}
-
-.s2d {
-	position: absolute;
-	width: $l; height: $l;
-	transform: 
-		rotatey(calc(var(--idx)*1turn/var(--p)))
-		translatez(calc(var(--rf)*#{$l}));
-	background: Linear-gradient(90deg, var(--sl));
-}
-@keyframes r { to { transform: rotatey(1turn) } }
-  </style>
-  </HEAD>
-
-- var n = 18;
-- var a = -.25, b = .5, c = 1;
-- var m = ['#A2CCB6', '#FCEEB5', '#EE786E'], p = m.length;
-
-style
-	| :root { --n: #{n}; --p: #{p}; --rf: #{.5/Math.tan(Math.PI/p)} }
-	- for(var i = 0; i < n; i++)
-		| .s3d:nth-child(n + #{i*n + 1}) { --i: #{i} }
-	- for(var j = 0; j < n; j++)
-		| .s3d:nth-child(#{n}n + #{j + 1}) { --j: #{j} }
-	- for(var k = 0; k < p; k++)
-		| .s2d:nth-child(#{p}n + #{k + 1}) { --idx: #{k}; --sl: #{m[k]}, #{m[(k)%p]} }
-input(type='radio' name='o' id='o1' checked)
-label(for='o1') option 1
-input(type='radio' name='o' id='o2')
-label(for='o2') option 2
-.a3d
-	- for(var i = 0; i < n; i++)
-		- for(var j = 0; j < n; j++)
-			- var xr = i - .5*(n - 1);
-			- var yr = j - .5*(n - 1);
-			- var rr = Math.hypot(xr, yr);
-			- var ang = Math.atan2(yr, xr);
-			.s3d(style=`--f0: ${+(2*rr/(n - 1)/Math.SQRT2).toFixed(2)}; --f1: ${+(.5*ang/Math.PI).toFixed(2)};`)
-				- for(var k = 0; k < p; k++)
-					.s2d
-
- <HEAD>
+<HEAD>
     <TITLE>
       Home Page von Wulf Kolbe Hi folks!
     </TITLE>

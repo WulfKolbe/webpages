@@ -1,115 +1,73 @@
 <!DOCTYPE html>
 <html>
-<style type="text/css" media="screen">
-<style>
-    :root {
-        --n: 18;
-        --p: 3;
-        --rf: 0.288675134594813
-    }
 
-    .s3d:nth-child(n + 325) {
-        --i: 18
-    }
-</style>.s3d:nth-child(18n + 1) { --j: 0 }.s3d:nth-child(18n + 2) { --j: 1 }.s3d:nth-child(18n + 3) { --j: 2 }.s3d:nth-child(18n + 4) { --j: 3 }.s3d:nth-child(18n + 5) { --j: 4 }.s3d:nth-child(18n + 6) { --j: 5 }.s3d:nth-child(18n + 7) { --j: 6 }.s3d:nth-child(18n
-+ 8) { --j: 7 }.s3d:nth-child(18n + 9) { --j: 8 }.s3d:nth-child(18n + 10) { --j: 9 }.s3d:nth-child(18n + 11) { --j: 10 }.s3d:nth-child(18n + 12) { --j: 11 }.s3d:nth-child(18n + 13) { --j: 12 }.s3d:nth-child(18n + 14) { --j: 13 }.s3d:nth-child(18n + 15)
-{ --j: 14 }.s3d:nth-child(18n + 16) { --j: 15 }.s3d:nth-child(18n + 17) { --j: 16 }.s3d:nth-child(18n + 18) { --j: 17 }.s2d:nth-child(3n + 1) { --idx: 0; --sl: #A2CCB6, #A2CCB6 }.s2d:nth-child(3n + 2) { --idx: 1; --sl: #FCEEB5, #FCEEB5 }.s2d:nth-child(3n
-+ 3) { --idx: 2; --sl: #EE786E, #EE786E }<input type="radio" name="o" id="o1" checked="checked" /><label for="o1">option 1</label><input type="radio" name="o" id="o2" /><label for="o2">option 2</label>
-<div class="a3d">
-    <div class="s3d" style="--f0: 1.06; --f1: 0.37;">
-        <div class="s2d"></div>
-        <div class="s2d"></div>
-        <div class="s2d"></div>
+<head>
+    <title>iFrame Tester </title>
+    <meta charset="UTF-8" />
+
+    <style>
+        .img-bg {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100vh;
+            background: url('.background.png');
+            background-size: 100%;
+            background-attachment: fixed;
+            background-position: center top;
+            clip-path: circle(300px at center);
+        }
+        
+        .text {
+            top: 0;
+            left: 0;
+            width: 500%;
+            height: 100vh;
+        }
+    </style>
+</head>
+
+<body>
+
+
+    <div>
+        <!--iframe
+//	src="http://192.168.2.13:3000/d/_14-cVknk/postgres-tester?tab=queries&orgId=1&from=1532300072306&to=1532388179795&var-cats=physicalMeasurement&var-config_id=856253&var-seg=20001%20%5B%222018-04-20%2002:30:13.92%22,%222018-04-20%2021:56:51.47%22)"
+//  src="http://192.168.2.13:3000/d/_14-cVknk/postgres-tester?tab=queries&orgId=1&edit=true&from=1532063847679&to=1532572602047&var-cats=physicalMeasurement&var-config_id=856253"
+  width="650"
+  height="300"
+  frameborder="0"
+> </iframe-->
     </div>
-    <div class="s3d" style="--f0: 1.01; --f1: 0.36;">
-        <div class="s2d"></div>
-        <div class="s2d"></div>
-        <div class="s2d"></div>
-    </div>
-    <div class="s3d" style="--f0: 0.96; --f1: 0.35;">
-        <div class="s2d"></div>
-        <div class="s2d"></div>
-        <div class="s2d"></div>
-    </div>
-    <div class="s3d" style="--f0: 0.91; --f1: 0.33;">
-        <div class="s2d"></div>
-        <div class="s2d"></div>
-        <div class="s2d"></div>
-    </div>
-    <div class="s3d" style="--f0: 0.87; --f1: 0.32;">
-        <div class="s2d"></div>
-        <div class="s2d"></div>
-        <div class="s2d"></div>
-    </div>
-    <div class="s3d" style="--f0: 0.84; --f1: 0.31;">
-        <div class="s2d"></div>
-        <div class="s2d"></div>
-        <div class="s2d"></div>
-    </div>
-    <div class="s3d" style="--f0: 0.82; --f1: 0.29;">
-        <div class="s2d"></div>
-        <div class="s2d"></div>
-        <div class="s2d"></div>
-    </div>
-    <div class="s3d" style="--f0: 0.8; --f1: 0.27;">
-        <div class="s2d"></div>
-        <div class="s2d"></div>
-        <div class="s2d"></div>
-    </div>
-    <div class="s3d" style="--f0: 0.79; --f1: 0.26;">
-        <div class="s2d"></div>
-        <div class="s2d"></div>
-        <div class="s2d"></div>
-    </div>
-    <div class="s3d" style="--f0: 0.79; --f1: 0.24;">
-        <div class="s2d"></div>
-        <div class="s2d"></div>
-        <div class="s2d"></div>
-    </div>
-    <div class="s3d" style="--f0: 0.8; --f1: 0.23;">
-        <div class="s2d"></div>
-        <div class="s2d"></div>
-        <div class="s2d"></div>
-    </div>
-    <div class="s3d" style="--f0: 0.82; --f1: 0.21;">
-        <div class="s2d"></div>
-        <div class="s2d"></div>
-        <div class="s2d"></div>
-    </div>
-    <div class="s3d" style="--f0: 0.84; --f1: 0.19;">
-        <div class="s2d"></div>
-        <div class="s2d"></div>
-        <div class="s2d"></div>
-    </div>
-    <div class="s3d" style="--f0: 0.87; --f1: 0.18;">
-        <div class="s2d"></div>
-        <div class="s2d"></div>
-        <div class="s2d"></div>
-    </div>
-    <div class="s3d" style="--f0: 0.91; --f1: 0.17;">
-        <div class="s2d"></div>
-        <div class="s2d"></div>
-        <div class="s2d"></div>
-    </div>
-    <div class="s3d" style="--f0: 0.96; --f1: 0.15;">
-        <div class="s2d"></div>
-        <div class="s2d"></div>
-        <div class="s2d"></div>
-    </div>
-    <div class="s3d" style="--f0: 1.01; --f1: 0.14;">
-        <div class="s2d"></div>
-        <div class="s2d"></div>
-        <div class="s2d"></div>
-    </div>
-    <div class="s3d" style="--f0: 1.06; --f1: 0.13;">
-        <div class="s2d"></div>
-        <div class="s2d"></div>
-        <div class="s2d"></div>
-    </div>
+
+    <div>
+        <iframe id="Grafana" src="http://sensorcloud.ddns.net:3000/d-solo/SM1FD9rGk/ice?orgId=1&from=1481224862392&to=1481488729456&panelId=2" width="2048" height="512" frameborder="0"></iframe-->
 </div>
-	
-<HEAD>
-    <TITLE>
-      Home Page von Wulf Kolbe Hi folks!
-    </TITLE>
+
+ 
+<div id="text" class="text">  Hallo </div> 
+<div id="hallo" class="img-bg">  Hallo </div>
+
+
+
+
+  <script>
+document.addEventListener('DOMContentLoaded', function () { 
+  var imgbg = document.querySelector('.img-bg');
+  console.log("loaded");
+    window.addEventListener('scroll', function(e) {
+        var value = window.scrollX; // geht nicht Math.max(window.scrollX,window.scrollY);
+         console.log("scroll event",e);
+       imgbg.style.transform = "skew("+ -value*0.1 + "deg, " + value*0.1 + "deg)";
+       imgbg.style.clipPath = "circle(" + value + "px at center)";
+     });
+	 
+	 });
+
+	//src="http://192.168.2.13:3000/d/_14-cVknk/postgres-tester?tab=queries&orgId=1&from=1532300072306&to=1532388179795&var-cats=physicalMeasurement&var-config_id=856253&var-seg=20001%20%5B%222018-04-20%2002:30:13.92%22,%222018-04-20%2021:56:51.47%22)"
+</script>
+
+  </body>
+  
 </html>
